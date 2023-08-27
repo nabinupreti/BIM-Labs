@@ -18,8 +18,8 @@ _Please feel free to update the codes as per needs and contribute to the reposit
 
 ## [3<sup>rd</sup> Semester](/Third_Semester/README.md)
 
-- [DSA with JAVA](/Third_Semester/)
-- [Web Technology I](/Third_Semester/)
+- [DSA with JAVA](/Third_Semester/Data-Structure-And-Algorithms-with-JAVA/README.md)
+- [Web Technology I](/Third_Semester/Web-Technology-I/README.md)
 
 ## Contributing
 
@@ -30,4 +30,4 @@ _Please feel free to update the codes as per needs and contribute to the reposit
 
 ## Author
 
-NABIN UPRETI
+-NABIN UPRETI

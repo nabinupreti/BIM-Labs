@@ -7,7 +7,7 @@
 
 ## 2. [Stack](/Third_Semester/Data-Structure-And-Algorithms-with-JAVA/stack/)
 
-- [Implementation of Stack using Array](/Third_Semester/Data-Structure-And-Algorithms-with-JAVA/stack/StackExample.java)
+- [Implementation of Stack using Array(Menu diven program)](/Third_Semester/Data-Structure-And-Algorithms-with-JAVA/stack/StackExample.java)
 - [Implementation of Stack using Linked List](/Third_Semester/Data-Structure-And-Algorithms-with-JAVA/stack/StackUsingLinkedList.java)
 
 ## 3. [Queue](/Third_Semester/Data-Structure-And-Algorithms-with-JAVA/queue/)

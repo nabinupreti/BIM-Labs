@@ -18,3 +18,14 @@ _Please feel free to update the codes as per needs and contribute to the reposit
 ## [3<sup>rd</sup> Semester](/Third_Semester/README.md)
 
 - [DSA with JAVA](/Third_Semester/)
+
+## Contributing
+
+1. Fork this repository
+2. Create your feature branch: `git checkout -b <branch-name>`
+3. Add changes
+4. Create a Pull Request
+
+## Author
+
+NABIN UPRETI

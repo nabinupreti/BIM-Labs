@@ -20,3 +20,5 @@
 
 - [LAB 10](/First_Semester/C_Programming/LAB-10-FileHandling/README.md)
 
+- [Practice Question](/First_Semester/C_Programming/PracticeForExam/README.md)
+

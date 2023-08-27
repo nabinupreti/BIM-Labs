@@ -1,0 +1,1 @@
+![Question](/First_Semester/C_Programming/LAB-05/PART-II/Part-II.jpg)

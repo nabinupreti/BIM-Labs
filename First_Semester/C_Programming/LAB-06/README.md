@@ -1,0 +1,1 @@
+![Question](/First_Semester/C_Programming/LAB-06/lab6%20Photo.jpg)

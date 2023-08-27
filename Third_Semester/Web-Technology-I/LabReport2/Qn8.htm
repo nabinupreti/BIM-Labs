@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Pseudo element selector</title>
+        <style>
+            h1::before{
+                content:"Example of ";
+                font-style: italic;
+            }
+            h1::after{
+                content: ": ";
+            }
+            P::first-letter{
+                font-size:50px;
+                color:red;
+            }
+            ::selection{
+                background-color: gray;
+                color:white;
+
+            }
+        </style>
+    </head>
+    <body>
+        <h1> Pseudo Element selector</h1>
+        <p>This is a text inside paragraph tag and the first letter of this sentence will be 50px with color: red</p>
+        <pre>If we select some text its background colour will be gray and text color will be white.</pre>
+    </body>
+</html>

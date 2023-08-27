@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Marksheet</title>
+        <style>
+            table{
+                width:100%;
+                text-align:center;
+                border-collapse: collapse;
+            }
+            tr,td,th{
+                border:1px solid black;
+            }
+            th{
+                background-color: lightgray;
+            }
+            tr:nth-child(even){
+                background-color: #dfdbdbd3;
+            }
+
+        </style>
+    </head>
+    <body>
+        <table>
+            <tr>
+                <th rowspan="2">Subject</th>
+                <th colspan="2">Marks</th>
+                <th rowspan="2">Percentage</th>
+            </tr>
+            <tr>
+                <th>Obtained</th>
+                <th>Total</th>
+            </tr>
+            <tr>
+                <td>Mathemetics</td>
+                <td>90</td>
+                <td>100</td>
+                <td>90%</td>
+            </tr>
+            <tr>
+                <td>Science</td>
+                <td>85</td>
+                <td>100</td>
+                <td>85%</td>
+            </tr>
+            <tr>
+                <td>Computer</td>
+                <td>85</td>
+                <td>100</td>
+                <td>85%</td>
+            </tr>
+            <tr>
+                <td>Sociology</td>
+                <td>85</td>
+                <td>100</td>
+                <td>85%</td>
+            </tr>
+            <tr>
+                <td colspan="3">Total</td>
+                <td>87.3%</td>
+            </tr>
+        </table>
+    </body>
+</html>

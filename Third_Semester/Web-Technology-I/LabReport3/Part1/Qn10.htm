@@ -1,0 +1,45 @@
+<html>
+    <head>
+        <title>Mouse Event</title>
+        <script>
+            function Click(){
+                div1.style.backgroundColor="green";
+            }
+            function Click1(){
+                div2.style.backgroundColor="blue";
+            }
+            function Click2(){
+                div3.style.backgroundColor="yellow";
+            }
+            function Click3(){
+                p1.style.backgroundColor="pink";
+            }
+            function Click4(){
+                btn1.style.backgroundColor="maroon";
+            }
+            function Click5(){
+                btn2.style.backgroundColor="skyblue";
+            }
+        </script>
+        <style>
+            div{
+                margin: 2px;
+                border:1px solid black;
+                float:left;
+                width:20%;
+                height:30px;
+                background-color:gray;
+            }
+
+        </style>
+        </head>
+        <body>
+            <div id="div1" onclick="Click()">First Class</div>
+            <div id="div2" onmousedown="Click1()">Second Class</div>
+            <div id="div3" onmouseenter="Click2()">Third Class</div><br>
+            <p id="p1" onmouseout="Click3()">On mouse out</p>
+            <button id="btn1" ondblclick="Click4()">On Double Click</button>
+            <button id="btn2" onmouseleave="Click5()">On mouse Leave</button>
+           
+        </body> 
+        </html>

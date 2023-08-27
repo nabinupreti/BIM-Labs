@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id = "text1" placeholder="Enter a sentence">
+    <button onclick="getLength()">Get Length</button>
+    <button onclick="getUpper()">Convert to Uppercase</button>
+    <button onclick="getLower()">Convert to Lowercase</button>
+    <br>
+    <p id ="result1"></p>
+
+    <input type="text" id="first" placeholder="Enter first name">
+    <input type="text" id="last" placeholder="Enter last name">
+    <button onclick="getConcat()">concat</button>
+    <br>
+    <p id="result2"></p>
+
+    <input type="text" id="text2" placeholder="Enter a sentence">
+    <input type="text" id="start" placeholder="Enter start index">
+    <input type="text" id="end" placeholder="Enter end index">
+    <button onclick="getSlice()">Slice</button>
+    <br>
+    <p id="result3"></p>
+
+    <script>
+        let res1=document.getElementById("result1");
+        function getLength(){
+            let a = document.getElementById("text1").value;
+            let len = a.length;
+            res1.innerHTML = "Length : "+len; 
+        }
+
+        function getUpper(){
+            let a = document.getElementById("text1").value;
+            let upper = a.toUpperCase();
+            res1.innerHTML = "UPPERCASE : "+upper;
+        }
+
+        function getLower(){
+            let a = document.getElementById("text1").value;
+            let lwr = a.toLowerCase();
+            res1.innerHTML = "lowercase : "+lwr;
+        }
+
+        function getConcat(){
+            let res2 = document.getElementById("result2");
+            let a = document.getElementById("first").value;
+            let b = document.getElementById("last").value;
+            let con = a.concat(" ",b);
+            res2.innerHTML = "Concat : "+con;
+        }
+
+        function getSlice(){
+            let res3 = document.getElementById("result3");
+            let sen = document.getElementById("text2").value;
+            let idx1 = parseInt(document.getElementById("start").value);
+            let idx2 = parseInt(document.getElementById("end").value);
+            let res = sen.slice(idx1,idx2); 
+            res3.innerHTML = "Sliced : "+res;
+        }
+    </script>
+</body>
+</html>

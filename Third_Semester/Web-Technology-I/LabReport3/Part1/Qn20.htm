@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Array Creation</title>
+        <style>
+            #display{
+                display:none;
+            }
+            #display table{
+                border-collapse: collapse;
+                border:1px solid blue;
+            }
+            th,td{
+                padding: 5px;
+            }
+        </style>
+    </head>
+    <body>
+        <h2>Array Creation and insert elements: </h2>
+        <label for="arraySize">Enter array size: </label>
+        <input type="number" id="arraySize">
+        <button onclick="createArray()">Create Array</button>
+        <br><br>
+        <div id="display">
+            <h3>Displaying Array:</h3>
+            <table id="arrayTable" border="1px">
+                <tr>
+                    <th>Index</th>
+                    <th>Element</th>
+                </tr>
+            </table>
+        </div>
+        <script>
+           function createArray(){
+                var arraySize = document.getElementById('arraySize').value;
+                var arr = [];
+                for(var i=0;i<arraySize;i++){
+                    arr[i] = prompt("Enter element "+(i+1));
+                }
+                //code for displaying array table
+                document.getElementById('display').style.display = 'block';
+                var table = document.getElementById('arrayTable');
+                for(var i = 0; i<arraySize;i++){
+                    var row = table.insertRow();
+                    var indexCell = row.insertCell();
+                    var elementCell = row.insertCell();
+                    indexCell.innerHTML = i;
+                    elementCell.innerHTML = arr[i];
+                }
+            }
+        </script>
+    </body>
+</html>

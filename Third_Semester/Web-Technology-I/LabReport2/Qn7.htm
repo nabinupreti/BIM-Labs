@@ -1,0 +1,31 @@
+<html>
+    <head>
+        <title>Pseudo-class Selector</title>
+        <style>
+            a:hover{
+                color: red;
+                text-decoration: overline;
+            }
+            input:focus{
+                width: 50%;
+                background-color: lightgray;
+            }
+            button:not([type="submit"]){
+                color: blue;
+                background-color: gray;
+            }
+        </style>
+    </head>
+    <body>
+        <h2>Pseudo-class Selector Example</h2>
+        <p>If you hover to the link below, Text color will changes to "Red" and text decoration will be "Overline"</p>
+        <a href="#">Hover Link</a>
+        <br><br>
+        <p>If you click to the text field below, background color changes to "Light gray" </p>
+        <input type="text" placeholder="Focused Input">
+        <br><br>
+        
+        <button type="button">Button 1</button>
+        <button type="Submit">Submit</button>
+    </body>
+</html>

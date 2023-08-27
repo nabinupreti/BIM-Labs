@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>String to array</title>
+    </head>
+    <body>
+        <script>
+            var students = "Nabin Upreti,Bikas Bhatta,Hari Parajuli,Rohan Shrestha,Himani Khatri";
+            document.write("String of 5 students: "+students);
+
+            var arr = students.split(",");
+            document.write("<br>After converted in to array: ");
+            for(var i=0;i<arr.length;i++){
+                document.write("<br>Index ["+i+"]: "+arr[i]);
+            }
+        </script>
+    </body>
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Form Validation 6</title>
+        <style>
+            #error{
+                display: none;
+                color: red;
+            }
+            #welcome{
+                display: none;
+                color: green;
+            }
+        </style>
+    </head>
+    <body>
+        <form onsubmit="validate()">
+            <label for="username">Username: </label>
+            <input type="text" id="username">
+            <br><br>
+            <label for="password">Password</label>
+            <input type="password" id="password">
+            <br><br>
+            <input type="submit" value="Submit">
+            <br>
+            <div id="error"></div>
+            <div id="welcome">Welcome Form validated Successfully!!</div>
+        </form>
+    </body>
+    <script>
+        function validate(){
+            event.preventDefault();
+            var name = document.getElementById('username').value;
+            var pwd = document.getElementById('password').value;
+
+            if(name === '' || pwd === ''){
+                displayError('Username or Password cannot be empty');
+            }else if(name === pwd){
+                displayError('Username and password cannot be same');
+            }else if(name.length < 6 || pwd.length <6){
+                displayError('Userrname and password length should be gerater than 5 character')
+            }else if(name!='nccsBim123' || pwd!="nccsKathmandu"){
+                displayError("Username or password is incorrect");
+            }else{
+                document.getElementById('error').style.display = 'none';
+                document.getElementById('welcome').style.display = 'block';
+            }
+        }
+
+        function displayError(message){
+            document.getElementById('welcome').style.display = 'none';
+            document.getElementById('error').style.display = 'block';
+            document.getElementById('error').textContent = message;
+        }
+
+    </script>
+</html>

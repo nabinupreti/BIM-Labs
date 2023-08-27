@@ -1,0 +1,25 @@
+h1{
+    text-align: center;
+    color: blue;
+    font-weight: 100;
+    letter-spacing: 2px;
+}
+p{
+    font-size: 18px;
+    color: red;
+}
+ul{
+    background-color: lightgray;
+    padding: 10px;
+}
+li{
+    margin-bottom: 5px;
+}
+.box{
+    width:200px;
+    height:100px;
+    background-color: yellow;
+    border:2px solid black;
+    text-align: center;
+    line-height: 100px;
+}

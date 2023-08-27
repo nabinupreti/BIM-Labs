@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<head>
+    <title>Form</title>
+</head>
+<body>
+    <h1 style="text-align: center;">XYZ College of IT</h1>
+    <p style="text-align: center;">Student detail form</p>
+    <hr color="blue">
+    <form action="post">
+        <fieldset>
+            <legend>Personal information</legend>
+            <label for="name">Name:</label>
+            <input type="text" id="name"  required >
+            <br><br>
+            <label for="address">Address:</label>
+            <input type="text" id="address">
+            <br><br>
+            <label for="gender">Sex:</label>
+            <input type="radio"id=male name="gender">
+            <label for="male">Male</label>
+            <input type="radio" name="gender" id="female">
+            <label for="female">Female</label>
+            <br><br>
+            <label for="color">Select your favourite color:</label>
+            <input type="color" id="color">
+            <br><br>
+            <label for="dob">Date of Birth:</label>
+            <input type="date" id="dob">
+            <br><br>
+            <label for="citizenship">Upload Citizenship photo:</label>
+            <input type="file" id="citizenship">
+            <br><br>
+            <label for="mobile">Mobile Number:</label>
+            <input type="tel" id="mobile">
+            <br><br>
+            <label for="appointment">Appointment time:</label>
+            <input type="time" id="appointment">
+        </fieldset><br>
+        <fieldset>
+            <legend align="right">Hobby and Education</legend>
+            <label >Hobbies:</label>
+            <input type="checkbox"  id="hobbies">
+            <label for="hobbies">Movies</label>
+            <input type="checkbox"  id="football">
+            <label for="football">Playing Football</label>
+            <input type="checkbox"  id="reading">
+            <label for="reading">Reading Nobel</label>
+            <input type="checkbox"  id="other">
+            <label for="other">Others</label>
+            <br><br>
+            <label for="education">Education:</label>
+            <select name="edu" id="education">
+                <option value="PHD">PHD</option>
+                <option value="Masters">Masters</option>
+                <option value="Bachelors">Bachelors</option>
+                <option value="Plus Two">+2</option>
+                <option value="SEE">SEE</option>
+            </select>
+        </fieldset><br>
+        <label for="comment">Few Words:</label><br>
+        <textarea id="comment" cols="40" rows="8"></textarea>
+        <br><br>
+        <input type="submit" value="send">
+        <input type="reset"  value="clear">
+    </form>
+</body>
+</html>

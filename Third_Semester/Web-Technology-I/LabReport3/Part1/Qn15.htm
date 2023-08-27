@@ -1,0 +1,27 @@
+<html>
+    <head>
+        <title>Replace Word</title>
+    </head>
+    <body>
+        <h1>Replace word!!</h1>
+        <input type="text" id="sentence" placeholder="Enter a sentence">
+        <input type="text" id="w1" placeholder="Enter a word to replace">
+        <input type="text" id="w2" placeholder="Enter replacement word">
+        <button onclick="replace()">Replace</button>
+        <br>
+        <h2>After Replacement:</h2>
+        <p id="res"></p>
+
+        <script>
+            function replace(){
+                var sen = document.getElementById("sentence").value;
+                var replace = document.getElementById("w1").value;
+                var replaced = document.getElementById('w2').value;
+
+                var res = sen.replace(replace,replaced);
+
+                document.getElementById('res').innerHTML = res;
+            }
+        </script>
+    </body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Array Handling methods</title>
+    </head>
+    <body>
+        <script>
+            var array = ["Apple","kiwi","banana"];
+            document.write("Initial array is: "+array)
+            var arrayLen = array.length;
+            document.write("<br>Length of array is "+arrayLen);
+
+            array.reverse();
+            document.write("<br> Reversed Array: "+array);
+
+            array.sort();
+            document.write("<br> Sorted array: "+array);
+
+            array.splice(1,0,"guava");
+            document.write("<br> after inserting at index 1: "+array);
+
+            var arrayJoin = array.join("-");
+            document.write("<br> After converted in to string: "+arrayJoin);
+
+            var arrayIncludes = array.includes("banana");
+            document.write("<br> banana includes in array: "+arrayIncludes);
+
+            var arrayString = array.toString();
+            document.write("<br> After converted in to string array is "+arrayString);
+
+            var arrayPop = array.pop();
+            document.write("<br> Deleted last element of array : "+arrayPop);
+
+            array.push("papaya");
+            document.write("<br> After inserting element to the last: "+array);
+
+            var arrayShift = array.shift();
+            document.write("<br> Deleting element from first: "+arrayShift);
+
+            array.unshift("Grapes");
+            document.write("<br> Inserted element at first: "+array);
+
+
+            array.fill("Mango");
+            document.write("<br> After filling array is "+array);
+
+        </script>
+    </body>
+</html>

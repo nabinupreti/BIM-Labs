@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>String functions</title>
+    </head>
+    <body>
+        <script>
+            var str = "web programming is amazing and exciting to learn";
+
+            document.write("String : "+str);
+            document.write("<br>Length: "+str.length);
+            document.write("<br>Reversed: "+str.split(" ").reverse().join(" "));
+            var idx = str.indexOf("exciting");
+            if(idx!=-1){
+                document.write("<br>exciting word found at index "+idx);
+            }else{
+                document.write("<br>exciting word doesnot found in string");
+            }
+            str.trim();
+
+            var arr = str.split(" ");
+            document.write("<br>After converted in to array: ");
+            for(var i=0;i<arr.length;i++){
+                document.write("<br>Index ["+i+"]: "+arr[i]);
+            }
+
+            document.write("<br>Character on position 8: "+str.charAt(8));
+
+            document.write("<br>Part of string from position 2 to 10: "+str.slice(2,10));
+
+            document.write("<br>After replacing word programming with technology: "+str.replace("programming","technology"));
+
+
+            
+            
+        </script>
+    </body>
+</html>

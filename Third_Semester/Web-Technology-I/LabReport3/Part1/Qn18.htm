@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Cheque equal</title>
+    </head>
+    <body>
+        <h2>Check Equality</h2>
+        <button onclick="takeInput()">Give input</button>
+        <p id="input1"></p>
+        <p id="input2"></p>
+        <h3 id="res"></h3>
+        <script>
+            function takeInput(){
+                var str1 = prompt("Enter first String: ");
+                document.getElementById('input1').innerHTML = "First String: "+str1;
+                var str2 = prompt("Enter second String: ");
+                document.getElementById('input2').innerHTML =  "Second String: "+str2;
+
+                if(str1 === str2){
+                    document.getElementById('res').innerHTML = "Uppercase of given string : "+str1.toUpperCase();
+                }else{
+                    document.getElementById('res').innerHTML = "Two Strings are not equal";
+                }
+            }
+
+
+        </script>
+    </body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <style>
+        input{
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h2>Calculator</h2>
+    <Label for = "num1">First Number:</Label>
+    <input type="text" id="num1" placeholder="5.5"><br>
+    <label for="num2">Second Number:</label>
+    <input type="text" id="num2" placeholder="3.5"><br><br>
+
+    <button onclick="sum()">Calculate Sum</button>
+    <button onclick="difference()">Calculate Difference</button>
+    <button onclick="product()">Calculate Multiplication</button>
+
+    <h3>Result:</h3>
+    <p id="result"></p>
+
+    <script>
+        let res = document.getElementById("result");
+        function sum(){
+            let n1 = parseFloat(document.getElementById("num1").value);
+            let n2 = parseFloat(document.getElementById("num2").value);
+            res.innerHTML = "Sum : "+(n1+n2);
+        }
+
+        function difference(){
+            let n1 = parseFloat(document.getElementById("num1").value);
+            let n2 = parseFloat(document.getElementById("num2").value);
+            res.innerHTML = "Difference : "+(n1-n2);
+        }
+
+        function product(){
+            let n1 = parseFloat(document.getElementById("num1").value);
+            let n2 = parseFloat(document.getElementById("num2").value);
+            res.innerHTML = "Product : "+(n1*n2);
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Merge array</title>
+    </head>
+    <body>
+        <script>
+            var arr1 = ["a","b","c","d","e"];
+            var arr2 = ['1','2','3','4','5'];
+            document.write("Array1 : "+arr1);
+            document.write("<br>Array2 : "+arr2);
+            arr3 = arr1.concat(arr2);
+            document.write("<br>After merge: "+arr3);
+            document.write("<br>Elements from position 4 to 8 are: ");
+            for(var i=3;i<8;i++){
+                document.write("<br>Position  "+(i+1)+": "+arr3[i]);
+            }
+            arr3.sort();
+            var str = arr3.toString();
+            document.write("<br>After sorting and converted in to string: "+str);
+        </script>
+    </body>
+</html>

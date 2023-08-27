@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Count the no. of repetation</title>
+
+    </head>
+    <body>
+        <script>
+            var str = "Web programming is fun to learn but at the same time programming is difficult too. Web programming is core course in BIM third semester";
+            document.write("Given string is : "+str);
+            var arr = str.split(" ");
+            var count = 0;
+            for(i=0;i<arr.length;i++){
+                if(arr[i]==="programming"){
+                    count++;
+                }
+            }
+            document.write("<br>No. of time 'programming' repeated: "+count);
+        </script>
+    </body>
+
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Aray Functions</title>
+    </head>
+    <body>
+        <script>
+            var arr = ["a","b","c","d","e"];
+            document.write("array is :["+arr+"]");
+            arr.push("f","g","h");
+            document.write("<br> After adding 3 element at last: ["+arr+"]");
+            arr.pop();
+            document.write("<br> After removing a element from last: ["+arr+"]");
+            arr.unshift("x","y","z");
+            document.write("<br> After adding 3 element from first: ["+arr+"]");
+            arr.splice(6,0,"10",'20','30','40','50');
+            document.write("<br> After adding 5 element from position 6: ["+arr+"]");
+            arr.splice(2,2);
+            document.write("<br> After deleting 2 element from position 2 to 4:["+arr+"]");
+            var str = arr.join();
+            document.write("<br> After onverting array to string: "+str);
+
+        </script>
+    </body>
+</html>

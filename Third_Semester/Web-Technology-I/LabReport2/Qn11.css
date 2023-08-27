@@ -1,0 +1,48 @@
+#dotted{
+    border:3px dotted blue;
+}
+
+#dashed{
+    border:3px dashed red;
+}
+
+#solid{
+    border: 3px solid pink;
+}
+
+#double{
+    border: 3px double green;
+}
+
+#groove{
+    border: 3px groove red;
+}
+
+#ridge{
+    border: 3px ridge grey;
+}
+
+#inset{
+    border: 3px inset gray;
+}
+
+#outset{
+    border: 3px outset green;
+}
+
+#no{
+    border:none;
+}
+
+#hide{
+    border:hidden
+}
+
+#mixed{
+   
+    border-top:dotted;
+    border-right: dashed;
+    border-bottom: groove;
+    border-left: solid;
+    border-color: red;
+}

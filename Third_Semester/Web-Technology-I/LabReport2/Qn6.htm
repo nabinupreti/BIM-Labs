@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Attribute selector</title>
+  <style>
+    /* a. CSS [attribute] Selector */
+    p[title] {
+      color: blue;
+    }
+
+    /* b. CSS [attribute="value"] Selector */
+    a[href="https://www.example.com"] {
+      font-weight: bold;
+    }
+
+    /* c. CSS [attribute~="value"] Selector */
+    li[name~="featured"] {
+      background-color: yellow;
+    }
+
+    /* d. CSS [attribute|="value"] Selector */
+    a[href|="https://www.example.com"] {
+      color: green;
+    }
+
+    /* e. CSS [attribute^="value"] Selector */
+    input[name^="user"] {
+      border: 1px solid red;
+    }
+
+    /* f. CSS [attribute$="value"] Selector */
+    img[src$=".png"] {
+      border: 2px solid black;
+    }
+
+    /* g. CSS [attribute*="value"] Selector */
+    input[type*="sswor"] {
+      background-color: lightgray;
+    }
+  </style>
+</head>
+<body>
+  <p title="important">This paragraph is important.</p>
+  <p>This paragraph does not have a title attribute.</p>
+
+  <a href="https://www.example.com">Visit Example</a>
+  <a href="https://www.google.com">Visit Google</a>
+
+  <ul>
+    <li name="featured">Item 1</li>
+    <li name="new">Item 2</li>
+    <li name="featured">Item 3</li>
+  </ul>
+
+  <input type="text" name="username" placeholder="Username">
+  <input type="password" name="password" placeholder="Password">
+  <input type="text" name="email" placeholder="Email">
+
+  <img src="image1.png" alt="Image 1">
+</body>
+</html>

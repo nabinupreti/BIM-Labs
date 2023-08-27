@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Form Validation 4</title>
+        <style>
+            .container{
+                max-width:480px;
+                border:1px solid black;
+                border-radius: 10px;
+                margin:auto;
+                padding:5px;
+                background-color: lightgray;
+            }
+            input{
+                border-radius: 3px;
+            }
+            input[type="submit"],input[type="reset"]{
+                background-color: lightGreen;
+                cursor: pointer;
+                padding:5px;
+            }
+            input[type="submit"]:hover,input[type="reset"]:hover{
+                background-color: green;
+            }
+
+        </style>
+    </head>
+    <body>
+        <form class="container" onsubmit="validateForm(event)">
+            <h2>Please fill the form below:</h2>
+            <label for="username">Username: </label>
+            <input type="text" id="username" onmouseout="checkUser()">
+            <span id="usercheck" ></span>
+            <br><br>
+            <label for="password">Password: </label>
+            <input type="password" id="password" onmouseout="checkPwd()">
+            <span id="pwdcheck"></span>
+            <br><br>
+            <label for="repwd">Retype-password: </label>
+            <input type="password" id="repwd" onmouseout="checkRepwd()">
+            <span id="retype"></span>
+            <br><br>
+            <label for="hobbies">Hobbies:</label>
+            <input type="checkbox" name="hobbies" id="hobbies">Playing Games
+            <input type="checkbox" name="hobbies" >Reading nobel
+            <input type="checkbox" name="hobbies">Other
+            <br><br>
+            <label for="gender">Gender: </label>
+            <input type="radio" name="gender" id="gender" value="male">MALE
+            <input type="radio" name="gender" value="female"> FEMELE
+            <br><br>
+            <label for="education">Select your Education: </label>
+            <select name="edu" id="education">
+                <option value="0" selected>--select--</option>
+                <option value="SEE">SEE</option>
+                <option value="10+2">PlusTwo</option>
+                <option value="bachelors">Bachelors</option>
+            </select>
+            <br><br>
+            <label for="email">Email: </label>
+            <input type="text" id="email">
+            <br><br>
+            <label for="phone">Phone: </label>
+            <input type="text" id="phone">
+            <br><br>
+           <input type="submit" value="Submit Detail">
+           <input type="reset" value="Clear Form">
+        </form>
+        <script>
+            function validateForm(event){
+                event.preventDefault();
+                var username = document.getElementById('username').value;
+                var password = document.getElementById('password').value;
+                var repwd = document.getElementById('repwd').value;
+                let userLen = username.length;
+                if(userLen<3 || userLen>20){
+                    alert("Username should between 3-20");
+                    return false;
+                }
+
+                if(password.length<6){
+                    alert("Password should at least of 6 characters.");
+                    return false;
+                }
+
+                if(password != repwd){
+                    alert("Password and Re-password must be same.");
+                    return false;
+                }
+
+                var checkbox = document.querySelectorAll('input[type="checkbox"]:checked');
+
+                if(checkbox.length === 0){
+                    alert("Hobbies should be selected");
+                    return false;
+                }
+
+                var radio = document.querySelectorAll('input[type="radio"]:checked');
+
+                if(radio.length === 0){
+                    alert("Gender should be selected");
+                    return false;
+                }
+
+                var s = document.getElementById('education');
+                var selected = s.options[s.selectedIndex].value;
+
+                if(selected == 0){
+                    alert("Please select one education qualification");
+                    return false;
+                }
+
+                var email = document.getElementById('email').value;
+
+                if(!/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(email)){
+                    alert("Inavlid Email");
+                    return false;
+                }
+
+                var phone = document.getElementById('phone').value;
+
+                if(!/^\d{10}$/.test(phone)){
+                    alert("Invalid Phone number");
+                    return false;
+                }
+                
+                window.open("Qn3.htm");
+                return true;
+            }
+            function checkUser(){
+                var username = document.getElementById('username').value;
+                var res = document.getElementById('usercheck');
+                let userLen = username.length;
+                if(userLen<3 || userLen>20){
+                    res.innerHTML="pwd length 3-20";
+                    res.style.color = "red";
+                    return false;
+                }
+
+                res.innerHTML="Valid";
+                res.style.color="green";
+
+            }
+
+            function checkPwd(){
+                
+                var password = document.getElementById('password').value;
+                var res = document.getElementById('pwdcheck');
+                if(password.length<=5){
+                    res.innerHTML="Weak Password!";
+                    res.style.color = "red";
+                    return false;
+                }
+                res.innerHTML="Strong Password";
+                res.style.color="green";
+            }
+
+            function checkRepwd(){
+                
+                var password = document.getElementById('password').value;
+                var repwd = document.getElementById('repwd').value;
+                var res = document.getElementById('retype');
+                if(password != repwd){
+                    res.innerHTML="password doesnot match!";
+                    res.style.color = "red";
+                    return false;
+                }
+                res.innerHTML="password match!";
+                res.style.color="green";
+            }
+        </script>
+    </body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Keyboard Event</title>
+        <script>
+            function press(){
+                div1.style.backgroundColor="green";
+            }
+            function down(){
+                div2.style.backgroundColor="blue";
+            }
+            function up(){
+                div3.style.backgroundColor="yellow";
+            }
+           
+        </script>
+        </head>
+        <body>
+            On Key Press: <input type="text" id="div1" onkeypress="press()"><br>
+            On key Down:<input type="text" id="div2" onkeydown="down()"><br>
+            On key Up: <input type="text" id="div3" onkeyup="up()"><br>
+            
+          
+           
+        </body> 
+        </html>

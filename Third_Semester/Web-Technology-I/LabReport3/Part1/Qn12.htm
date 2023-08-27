@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Window Event Example</title>
+</head>
+<body>
+  <script>
+    window.onload = function() {
+      alert("Window loaded");
+    };
+
+    window.onmessage = function(event) {
+      console.log("Message received:", event.data);
+    };
+
+    window.ononline = function() {
+      console.log("You are now online");
+    };
+
+    window.onoffline = function() {
+      alert("You are now offline");
+    };
+
+  </script>
+</body>
+</html>

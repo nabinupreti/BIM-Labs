@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Form Validation 4</title>
+</head>
+<body>
+  <h1>Form Validation</h1>
+  <form>
+    <label for="username">Username:</label>
+    <input type="text" id="username" required><br>
+    
+    <label for="password">Password:</label>
+    <input type="password" id="password" required><br>
+    
+    <label for="repassword">Re-enter Password:</label>
+    <input type="password" id="repassword" required><br>
+    
+    <h2>Checkbox:</h2>
+    <input type="checkbox" id="checkbox1" >
+    <label for="checkbox1">Checkbox 1</label>
+    <input type="checkbox" id="checkbox2" >
+    <label for="checkbox2">Checkbox 2</label>
+    <br><br>
+    
+    <h2>Radio Button:</h2>
+    <input type="radio" name="radio" id="radio1" >
+    <label for="radio1">Radio 1</label>
+    <input type="radio" name="radio" id="radio2" >
+    <label for="radio2">Radio 2</label>
+    <br><br>
+    
+    <h2>Dropdown Menu:</h2>
+    <select id="dropdown" required>
+      <option value="">-- Select an option --</option>
+      <option value="option1">Option 1</option>
+      <option value="option2">Option 2</option>
+      <option value="option3">Option 3</option>
+    </select>
+    <br><br>
+    
+    <label for="email">Email:</label>
+    <input type="text" id="email" required><br>
+    
+    <label for="phone">Phone:</label>
+    <input type="text" id="phone" required><br>
+    
+    <button type="button" onclick="validateForm()">Submit</button>
+  </form>
+
+  <script>
+    function validateForm() {
+
+      var username = document.getElementById('username').value;
+      var password = document.getElementById('password').value;
+      var repassword = document.getElementById('repassword').value;
+      var checkboxes = document.querySelectorAll('input[type="checkbox"]:checked');
+      var radioButtons = document.querySelectorAll('input[type="radio"]:checked');
+      var dropdown = document.getElementById('dropdown').value;
+      var email = document.getElementById('email').value;
+      var phone = document.getElementById('phone').value;
+      
+      if (username.length < 3 || username.length > 20) {
+        alert('Username should be between 3 and 20 characters.');
+        return false;
+      }
+      
+      if (password.length < 6) {
+        alert('Password should be at least 6 characters long.');
+        return false;
+      }
+      
+      if (password !== repassword) {
+        alert('Passwords do not match.');
+        return false;
+      }
+      
+      if (checkboxes.length === 0) {
+        alert('Please select at least one checkbox.');
+        return false;
+      }
+      
+      if (radioButtons.length === 0) {
+        alert('Please select a radio button.');
+        return false;
+      }
+      
+      if (dropdown === '') {
+        alert('Please select an option from the dropdown menu.');
+        return false;
+      }
+      
+      if (!/^[\w.-]+@[a-zA-Z_-]+?\.[a-zA-Z]{2,3}$/.test(email)) {
+        alert('Invalid email format.');
+        return false;
+      }
+      
+      if (phone.length!=10) {
+        alert('Phone number should be a 10-digit number.');
+        return false;
+      }
+      
+      // Form is valid
+      alert("data is valid");
+    }
+  </script>
+</body>
+</html>

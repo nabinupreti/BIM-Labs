@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Box Sizing property</title>
+        <style>
+            div{
+                padding:20px;
+                border:10px solid black;
+                height:100px;
+                width:300px;
+                margin:auto;
+                margin-bottom: 10px;
+            }
+
+            #box1{
+                box-sizing:content-box; /*normal, automatic*/
+            }
+
+            #box2{
+                box-sizing: border-box;
+            }
+
+        </style>
+    </head>
+    <body>
+        <div id="box1">
+            <h2>Content Box Example</h2>
+        </div>
+
+        <div id="box2">
+            <h2>Border Box Example</h2>
+        </div>
+    </body>
+</html>

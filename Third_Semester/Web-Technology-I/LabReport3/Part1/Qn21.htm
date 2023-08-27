@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Array creation</title>
+    </head>
+    <body>
+        
+        <script>
+            var size = prompt("Enter the size of array: ");
+            var array = [];
+            for(var i=0;i<size;i++){
+                array[i] = prompt("Enter name of student "+(i+1));
+            }
+
+            var toStr = array.join();
+
+            document.write("After converting in to string array is : "+toStr);
+
+        </script>
+    </body>
+</html>

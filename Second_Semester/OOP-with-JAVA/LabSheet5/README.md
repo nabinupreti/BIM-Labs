@@ -1,3 +1,4 @@
-## LAB 
+## LAB 5
 
-![Question](/Second_Semester/OOP-with-JAVA/LAB5QN.pdf)
+![PDF download](/Second_Semester/OOP-with-JAVA/LAB5QN.pdf)
+![qn](/Second_Semester/OOP-with-JAVA/LabSheet5/ph.png)

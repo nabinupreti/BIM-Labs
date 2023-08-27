@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Combinator selector</title>
+  <style>
+    /* a. Descendant selector */
+    div p {
+      color: blue;
+    }
+
+    /* b. Child selector */
+    ul> li {
+      background-color: yellow;
+    }
+
+    /* c. Adjacent sibling selector */
+    h2 + p {
+      font-weight: bold;
+    }
+
+    /* d. General sibling selector */
+    h3 ~ p {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+    <h1>Combinator Selector Example</h1>
+    <p>Descendant selector( ) will be applied on all p inside div</p>
+  <div>
+    <p>This paragraph is inside a div.</p>
+    <p>Child selector (>) will be applied on all li inside ul tag</p>
+    <ul>
+      <li>List item 1</li>
+      <li>List item 2</li>
+    </ul>
+  </div>
+  <p>Adjacent sibling selector (+) will applied on only one sibling (applied on one p after h2)</p>
+  <h2>Heading 2</h2>
+  <p>Paragraph 1</p>
+  <p>Paragraph 2</p>
+
+  <p>General sibling selector (~) will applied on all the sibling (applied on all p after h3)</p>
+  <h3>Heading 3</h3>
+  <p>Paragraph 3</p>
+  <p>Paragraph 4</p>
+</body>
+</html>

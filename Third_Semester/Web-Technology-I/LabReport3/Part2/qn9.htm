@@ -1,0 +1,26 @@
+<html>
+  <head>
+    <title>Class and Object demo</title>
+  </head>
+    <body>
+<p id="demo"></p>
+    </body>
+    <script>
+    class Book {
+  constructor(name, year) {
+    this.name = name;
+    this.year = year;
+  }
+  age(x) {
+    return x - this.year;
+  }
+}
+
+const date = new Date();
+let year = date.getFullYear();
+
+const myBook = new Book("Chitra", 2000);
+document.getElementById("demo").innerHTML=
+"This book is " + myBook.age(year) + " years old.";
+    </script>
+</html>

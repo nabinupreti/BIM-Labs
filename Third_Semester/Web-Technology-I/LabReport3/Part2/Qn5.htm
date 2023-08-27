@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Form Validation 5</title>
+        <style>
+            .error{
+                color:red;
+                font-size:12px;
+                display:none;
+            }
+        </style>
+        <script>
+            function validateRoll(){
+                var roll = document.getElementById('roll').value;
+                var isValid = !isNaN(roll);
+                
+                document.getElementById('rollError').style.display = isValid ? 'none' : 'inline';
+                return isValid;
+            }
+
+            function validateName(){
+                var name = document.getElementById('name').value;
+                var isValid = name.trim() !== '';
+                document.getElementById('nameError').style.display = isValid ? 'none' : 'inline';
+                return isValid;
+            }
+
+            function validatePhone(){
+                var phone  = document.getElementById('phone').value;
+                var isValid = !isNaN(phone);
+                document.getElementById('phoneError').style.display = isValid ? 'none' : 'inline';
+                return isValid;
+            }
+
+            function validateEmail(){
+                var email = document.getElementById('email').value;
+                var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+                var isValid = emailRegex.test(email);
+                document.getElementById('emailError').style.display = isValid ? 'none' : 'inline';
+                return isValid;
+            }
+
+            function validateForm(event){
+                event.preventDefault();
+                var isValidRoll = validateRoll();
+                var isValidName = validateName();
+                var isValidPhone = validatePhone();
+                var isValidEmail = validateEmail();
+
+                if(isValidRoll && isValidName && isValidPhone && isValidEmail){
+                    alert("Form Submitted!!");
+                }else{
+                    alert("Form Validation Failed!!");
+                }
+            
+            }
+        </script>
+    </head>
+    <body>
+        <form onsubmit="validateForm(event)">
+            <label for="roll" >Roll number: </label>
+            <input type="text" id="roll">
+            <span class="error" id="rollError">Invalid roll number</span>
+            <br><br>
+            <label for="name" >Name: </label>
+            <input type="text" id="name">
+            <span class="error" id="nameError">name cannot be empty</span>
+            <br><br>
+            <label for="phone">Phone: </label>
+            <input type="text" id="phone">
+            <span class="error" id="phoneError">Invalid phone number</span>
+            <br><br>    
+            <label for="email">Email: </label>
+            <input type="text" id="email">
+            <span class="error" id="emailError">Invalid email address</span>
+            <br><br>
+            <input type="submit" value="Sumbit">
+        </form>
+        
+
+    </body>
+</html>

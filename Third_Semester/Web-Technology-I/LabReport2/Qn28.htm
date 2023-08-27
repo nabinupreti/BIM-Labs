@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>z-index</title>
+<style>
+    
+.box {
+  position: absolute;
+  width: 200px;
+  height: 200px;
+}
+
+#box1 {
+  background-color: red;
+  top: 50px;
+  left: 50px;
+  z-index: 1;
+}
+
+.box2 {
+  background-color: blue;
+  top: 100px;
+  left: 100px;
+  z-index: 2;
+}
+
+.box3 {
+  background-color: green;
+  top: 150px;
+  left: 150px;
+  z-index: 3;
+}
+</style>
+</head>
+<body>
+<div class="box "id="box1"></div>
+<div class="box box2"></div>
+<div class="box box3"></div>
+</body>
+</html>

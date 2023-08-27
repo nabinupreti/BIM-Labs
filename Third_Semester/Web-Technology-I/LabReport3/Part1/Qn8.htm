@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Division change</title>
+    <style>
+        div{
+            width: 100px;
+            height:100px;
+            border:1px solid black;
+            float: left;
+            margin: 10px;
+        }
+        #div1{
+            background-color: Red;
+        }
+        #div2{
+            background-color: blue;
+        }
+        #div3{
+            background-color: green;
+        }
+        button{
+            background-color: lightblue;
+            margin: 10px;
+            width:90px;
+            height: 30px;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div id="div1">Div1</div>
+    <div id="div2">Div2</div>
+    <div id="div3">Div3</div>
+    <p id="prm"></p>
+    
+    <button onclick="change()">Change</button>
+
+    <script>
+        function change(){
+            let x = prompt("Enter a number");
+            document.getElementById("prm").innerHTML= "Prompt value is "+x;
+            let a = document.getElementById("div1");
+            a.style.backgroundColor = "green";
+            a.style.borderRadius = "5px";
+
+            let b = document.getElementById("div2");
+            b.style.backgroundColor = "yellow";
+            b.style.borderRadius = "5px";
+
+            let c = document.getElementById("div3");
+            c.style.backgroundColor = "blue";
+        }
+    </script>
+</body>
+</html>

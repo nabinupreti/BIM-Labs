@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Form Validation 1</title>
+</head>
+<body>
+  <form onsubmit="validateForm(event)">
+    <label for="inputString">String:</label>
+    <input type="text" id="inputString" required><br><br>
+    
+    <label for="inputNumber">Number:</label>
+    <input type="number" id="inputNumber" required><br>
+    
+    <input type="submit" value="Submit">
+  </form>
+  
+  <p id="message"></p>
+
+  <script>
+    function validateForm(event) {
+        event.preventDefault();
+      var inputString = document.getElementById("inputString").value;
+      var inputNumber = document.getElementById("inputNumber").value;
+      var result = document.getElementById("message");
+
+      if (inputString === "JavaScript" && inputNumber === "1996") {
+        result.innerHTML = "Welcome!";
+      } else {
+        result.innerHTML = "Please re-enter the string and number.";
+      }
+    }
+  </script>
+</body>
+</html>

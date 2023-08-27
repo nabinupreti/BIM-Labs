@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Form validation 3</title>
+    </head>
+    <body>
+        <form onsubmit="validateForm(event)">
+        <label for="gender">Gender: </label>
+        <input type="radio" name="gender" id="gender" value="male">MALE
+        <input type="radio" name="gender" value="female"> FEMELE
+            <br><br>
+        <label for="hobbies">Hobbies:</label>
+        <input type="checkbox" name="hobbies" id="hobbies">Playing Games
+        <input type="checkbox" name="hobbies" >Reading nobel
+        <input type="checkbox" name="hobbies">Other
+            <br><br>
+        <label for="education">Select your Education: </label>
+        <select name="edu" id="education">
+            <option value="" selected>Select</option>
+            <option value="SEE">SEE</option>
+            <option value="10+2">PlusTwo</option>
+            <option value="bachelors">Bachelors</option>
+
+        </select>
+
+        <br><br>
+        <input type="submit" value="Submit">
+        
+        </form>
+
+        <script>
+            function validateForm(event){
+                event.preventDefault();
+
+                var chbox = document.getElementsByName('hobbies');
+                var count = 0;
+
+
+                for(var i=0 ; i<chbox.length ; i++){
+                    if(chbox[i].checked){
+                    count++;
+                  }
+                }
+
+                if(count<2){
+                    alert("At least 2 checkbox must be selected.");
+                    return false;
+                }
+
+                alert("Condition Met!!");
+                return true;
+
+            }
+        </script>
+    </body>
+</html>

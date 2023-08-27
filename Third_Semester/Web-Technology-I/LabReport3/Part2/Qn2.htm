@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Form Validation 2</title>
+    </head>
+    <body>
+        <form onsubmit="validateForm(event)">
+            <label for="username">Username: </label>
+            <input type="text" id="username"><br><br>
+
+            <label for="password" >Password: </label>
+            <input type="password" id="password"><br><br>
+
+            <label for="phone">Phone: </label>
+            <input type="tel" id="phone"><br><br>
+
+            <input type="submit" value="Submit">
+        </form>
+
+        <script>
+            function validateForm(event){
+                event.preventDefault();
+
+                var username = document.getElementById('username').value;
+                var password = document.getElementById('password').value;
+                var phone = document.getElementById('phone').value;
+                
+                if(username === '' || password === '' || phone === ''){
+                    alert("All field should be Filled.");
+                    return false;
+                }
+
+                if(password.length < 6){
+                    alert("Password must contain 6 character");
+                    return false;
+                }
+
+                if(phone.length != 7){
+                    alert("Phone number should contaion 7 character.");
+                    return false;
+                }
+
+                alert("VALID DATA!!");
+                return true;
+            }
+        </script>
+    </body>
+</html>

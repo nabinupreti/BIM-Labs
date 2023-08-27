@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Form Validation 7</title>
+</head>
+<body>
+  <h2>User Registration</h2>
+  <form id="registrationForm" onsubmit="return validateForm()">
+    <label for="username">Username:</label>
+    <input type="text" id="username" name="username" required>
+    <br>
+
+    <label for="password">Password:</label>
+    <input type="password" id="password" name="password" required>
+    <br>
+
+    <label for="country">Country:</label>
+    <select id="country" name="country" required>
+      <option value="" disabled selected>Select a country</option>
+      <option value="USA">USA</option>
+      <option value="Canada">Canada</option>
+      <option value="UK">UK</option>
+      <option value="Australia">Australia</option>
+      <!-- Add more countries as needed -->
+    </select>
+    <br>
+
+    <input type="submit" value="Register">
+  </form>
+
+  <script>
+    function validateForm() {
+      const usernameInput = document.getElementById('username');
+      const passwordInput = document.getElementById('password');
+      const countryInput = document.getElementById('country');
+
+      const username = usernameInput.value;
+      const password = passwordInput.value;
+      const country = countryInput.value;
+
+      // Validate username length
+      if (username.length !== 8) {
+        alert('Username should be 8 characters long.');
+        return false;
+      }
+
+      // Validate password format (start with a digit and be alphanumeric)
+      if (!/^[0-9]/.test(password) || !/^[0-9a-zA-Z]+$/.test(password)) {
+        alert('Password should start with a digit and be alphanumeric.');
+        return false;
+      }
+
+      // Validate country selection
+      if (country === '') {
+        alert('Please select a country.');
+        return false;
+      }
+
+      // Form is valid, continue with submission
+      return true;
+    }
+  </script>
+</body>
+</html>

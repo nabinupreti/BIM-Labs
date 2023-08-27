@@ -1,2 +1,14 @@
-# BIM-Labs
- 
+<h1 style="color:maroon; font-weight:700; font-size:4rem">BIM Labs</h1>
+
+## Description
+
+This is a code repository for all the major lab codes necessary for BIM students according to semester in subject-wise format, currently in 3<sup>rd</sup> semester and is being updated.
+
+_Please feel free to update the codes as per needs and contribute to the repository._
+
+## [1<sup>st</sup> Semester](/First_Semester/README.md)
+
+- [C Programming](/First_Semester/C_Programming/README.md)
+- [Foundation of IT]
+
+## [2<sup>nd</sup> Semester] (/Second_Semester/README.md)

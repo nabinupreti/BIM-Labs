@@ -1,1 +1,1 @@
-## [3<sup>rd</sup> Semester]
+## 3<sup>rd</sup> Semester

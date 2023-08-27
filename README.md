@@ -9,6 +9,12 @@ _Please feel free to update the codes as per needs and contribute to the reposit
 ## [1<sup>st</sup> Semester](/First_Semester/README.md)
 
 - [C Programming](/First_Semester/C_Programming/README.md)
-- [Foundation of IT]
+- [Foundation of IT](/First_Semester/Foundaion_Of_IT/README.md)
 
-## [2<sup>nd</sup> Semester] (/Second_Semester/README.md)
+## [2<sup>nd</sup> Semester](/Second_Semester/README.md)
+
+- [OOPs with JAVA](/Second_Semester/)
+
+## [3<sup>rd</sup> Semester](/Third_Semester/README.md)
+
+- [DSA with JAVA](/Third_Semester/)

@@ -111,5 +111,3 @@ class PrimsMST {
 		t.primMST(graph);
 	}
 }
-
-// This code is contributed by Aakash Hasija

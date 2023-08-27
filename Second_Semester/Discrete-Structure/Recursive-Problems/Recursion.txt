@@ -1,0 +1,8 @@
+Wap to implement recursive algorithm
+-to find factorial of non-ngative integer
+-to find gcd of two numbers
+-to find a^n
+-to find b^n mod m
+-to implement linear search
+-to implement binary search
+-for merge sort

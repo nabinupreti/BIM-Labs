@@ -1,4 +1,5 @@
 # BIM Labs
+<img src="/ASSETS/Logo.png" width="200" height="200">
 ![Logo](/ASSETS/Logo.png)
 ## Description
 

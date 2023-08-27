@@ -1,6 +1,9 @@
 # BIM Labs
 <img src="/ASSETS/Logo.png" width="200" height="200">
 
+## Contents
+- [Description](/README.md/#Description)
+- [First Semester](/README.md/#2)
 ## Description
 
 This is a code repository for all the major lab codes necessary for BIM students according to semester in subject-wise format, currently in 3<sup>rd</sup> semester and is being updated.

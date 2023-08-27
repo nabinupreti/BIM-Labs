@@ -1,6 +1,6 @@
 # BIM Labs
 <img src="/ASSETS/Logo.png" width="200" height="200">
-![Logo](/ASSETS/Logo.png)
+
 ## Description
 
 This is a code repository for all the major lab codes necessary for BIM students according to semester in subject-wise format, currently in 3<sup>rd</sup> semester and is being updated.

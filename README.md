@@ -13,11 +13,13 @@ _Please feel free to update the codes as per needs and contribute to the reposit
 
 ## [2<sup>nd</sup> Semester](/Second_Semester/README.md)
 
-- [OOPs with JAVA](/Second_Semester/)
+- [OOPs with JAVA](/Second_Semester/OOP-with-JAVA/README.md)
+- [Discrete Structure](/Second_Semester/Discrete-Structure/README.md)
 
 ## [3<sup>rd</sup> Semester](/Third_Semester/README.md)
 
 - [DSA with JAVA](/Third_Semester/)
+- [Web Technology I](/Third_Semester/)
 
 ## Contributing
 

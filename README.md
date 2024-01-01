@@ -22,7 +22,7 @@ _Please feel free to update the codes as per needs and contribute to the reposit
 - [DSA with JAVA](/Third_Semester/Data-Structure-And-Algorithms-with-JAVA/README.md)
 - [Web Technology I](/Third_Semester/Web-Technology-I/README.md)
 
-## [4<sup>th</sup> Semester](/Third_Semester/README.md)
+## [4<sup>th</sup> Semester](/Fourth_Semester/README.md)
 
 - [PHP](/Fourth_Semester/PHP/README.md)
 - [OS](/Fourth_Semester/OS/)

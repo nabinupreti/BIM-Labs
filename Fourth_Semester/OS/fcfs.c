@@ -1,10 +1,10 @@
 /*
  * First Come First Serve(FCFS) Scheduling Program in C
  */
- 
 #include <stdio.h>
 int main()
 {
+    int i;
     int pid[15];
     int bt[15];
     int n;
@@ -12,18 +12,18 @@ int main()
     scanf("%d",&n);
  
     printf("Enter process id of all the processes: ");
-    for(int i=0;i<n;i++)
+    for(i=0;i<n;i++)
     {
         scanf("%d",&pid[i]);
     }
  
     printf("Enter burst time of all the processes: ");
-    for(int i=0;i<n;i++)
+    for(i=0;i<n;i++)
     {
         scanf("%d",&bt[i]);
     }
  
-    int i, wt[n];
+    int wt[n];
     wt[0]=0;
  
     //for calculating waiting time of each process

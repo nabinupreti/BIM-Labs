@@ -6,4 +6,4 @@
 - [4. Find Odd or Even](/Fourth_Semester/PHP/PHP%20Basics/04_oddEven.php)
 - [5. Check Prime or Not](/Fourth_Semester/PHP/PHP%20Basics/05_prime.php)
 - [6. Calculate result of a student](/Fourth_Semester/PHP/PHP%20Basics/06_singleResult.php)
-- [7. Calculate result of multiple student using class](/Fourth_Semester/PHP/PHP%20Basics/07_multipleResult.php)
+

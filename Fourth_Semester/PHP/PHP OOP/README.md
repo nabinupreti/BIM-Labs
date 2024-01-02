@@ -6,5 +6,6 @@
 - [4. To explore constructor and destructor](/Fourth_Semester/PHP/PHP%20OOP/04_constructorAndDestructor.php) 
 - [5. To check Odd or Even](/Fourth_Semester/PHP/PHP%20OOP/05_checkOddEvenConstructor.php) 
 - [6. To implement Bank Account deposit, withdraw and check balance](/Fourth_Semester/PHP/PHP%20OOP/06_BankAccount.php) 
+- [7. Calculate result of multiple student using class](/Fourth_Semester/PHP/PHP%20OOP/07_multipleResult.php)
 <!-- - [1. Calculate Area Of Triangle](/Fourth_Semester/PHP/)  -->
 

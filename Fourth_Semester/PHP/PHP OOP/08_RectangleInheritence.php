@@ -1,7 +1,7 @@
 <?php
-/* WAP to calculate the area of rectangle where the dimnsion of rectangle are the properties of class Shape and also 
-    it has one method called getDimension() to take dimension of rectangle, and another class Rectangle, which 
-    inherits class Shape and display the area.
+/* WAP to calculate the area of a rectangle where the dimensions of the rectangle are the properties of class Shape and also 
+    it has one method called getDimension() to take the dimension of a rectangle, and another class Rectangle, which 
+    inherits class Shape and displays the area.
 */
 class Shape{
     public $l, $b;

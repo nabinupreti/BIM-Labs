@@ -26,7 +26,7 @@ _Please feel free to update the codes as per needs and contribute to the reposit
 
 - [PHP](/Fourth_Semester/PHP/README.md)
 - [OS](/Fourth_Semester/OS/README.md)
-- [DBMS](/Fourth_Semester/DBMS/)
+- [DBMS](/Fourth_Semester/DBMS/README.md)
 
 ## Contributing
 

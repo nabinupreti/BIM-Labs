@@ -1,4 +1,4 @@
-# PHP Basics
+# PHP Form Handling
 
 - [1. Use of HTTP POST ](/Fourth_Semester/PHP/Form%20Handling/post.php)
 - [2. welcome.php ](/Fourth_Semester/PHP/Form%20Handling/welcome.php)

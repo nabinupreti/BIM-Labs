@@ -4,7 +4,7 @@
 <head>  
 <style>  
     .error {
-        color: #FF0001;
+        color: red;
         
     }  
 </style>  

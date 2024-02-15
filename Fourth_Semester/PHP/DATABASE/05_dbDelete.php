@@ -5,19 +5,19 @@ $password = "";
 $database = "nabin_php"; // Define the database name
 
 // Create connection
-$conn = mysqli_connect($servername, $username, $password, $database);
+$conn = new mysqli($servername, $username, $password, $database);
 
 // Check connection
-if (!$conn) {
-    die("Connection failed: " . mysqli_connect_error());
+if ($conn->connect_error) {
+    die("Connection failed: " . $conn->connect_error);
 }
 
 $sql = "DELETE FROM register WHERE id = 1";
-if (mysqli_query($conn, $sql)) {
+if ($conn->query($sql)===TRUE) {
     echo "Row deleted";
 } else {
-    echo "Error deleting: " . mysqli_error($conn);
+    echo "Error deleting: " . $conn->error;
 }
 
-mysqli_close($conn);
+$conn->close();
 ?>

@@ -4,10 +4,10 @@ $username = "root";
 $password = "";
 $dbname = "nabin_php";
 
-$conn = mysqli_connect($servername,$username,$password, $dbname);
+$conn = new mysqli($servername,$username,$password, $dbname);
 
-if(!$conn){
-    die("connection failed:" .mysqli_connect_error());
+if($conn->connect_error){
+    die("connection failed:" . $conn->connect_error);
 }
 
 $sql = "CREATE TABLE register(
@@ -17,11 +17,11 @@ $sql = "CREATE TABLE register(
     email VARCHAR(50)
     )";
 
-if (mysqli_query($conn,$sql)){
+if ($conn->query($sql)===TRUE){
     echo "Table register is created successfully";
 } 
 else{
-    echo "Error creating TABLE" .mysqli_error($conn);
+    echo "Error creating TABLE" . $conn->error;
 }
-mysqli_close($conn);
+$con->close();
 ?>

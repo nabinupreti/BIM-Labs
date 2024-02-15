@@ -5,19 +5,19 @@ $password = "";
 $database = "nabin_php"; // Define the database name
 
 // Create connection
-$conn = mysqli_connect($servername, $username, $password, $database);
+$conn = new mysqli($servername, $username, $password, $database);
 
 // Check connection
-if (!$conn) {
-    die("Connection failed: " . mysqli_connect_error());
+if ($conn->connect_error) {
+    die("Connection failed: " . $conn->connect_error);
 }
 
 $sql = "UPDATE register SET lastname = 'Upreti' WHERE firstname = 'Bikas' ";
-if (mysqli_query($conn, $sql)) {
+if ($conn->query($sql) === TRUE) {
     echo "Last names updated";
 } else {
-    echo "Error Updating: " . mysqli_error($conn);
+    echo "Error Updating: " . $conn->error;
 }
 
-mysqli_close($conn);
+$conn->close();
 ?>

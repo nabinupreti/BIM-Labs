@@ -18,7 +18,7 @@ VALUES ('Nabin', 'Upreti', 'nupreti00@gmail.com'),
 ('Pratistha', 'GM', 'gmpratistha@gmail.com')
 ";
 
-if($con->query($sql) == TRUE){
+if($con->query($sql) === TRUE){
     echo "Records Inserted Successfully.";
 }else{
     echo "Error: ".$con->error;

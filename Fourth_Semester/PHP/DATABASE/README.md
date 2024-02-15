@@ -1,4 +1,4 @@
-# PHP OOP
+# CRUD opeartions in PHP
 
 - [1. Create mysql database and connect to it.](/Fourth_Semester/PHP/DATABASE/01_createDatabase.php) 
 - [2. Create table.](/Fourth_Semester/PHP/DATABASE/02_createTable.php) 

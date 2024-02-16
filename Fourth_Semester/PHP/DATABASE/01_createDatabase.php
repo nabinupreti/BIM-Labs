@@ -14,7 +14,7 @@ if($con->connect_error){
 
 //Create database
 $sql = "CREATE DATABASE nabin_php";
-if($conn->query($sql)===TRUE){
+if($con->query($sql)===TRUE){
     echo "Database Created successfully";
 }else{
     echo "Error creating database: " . $con->error;

@@ -21,7 +21,7 @@ if ($conn->query($sql)===TRUE){
     echo "Table register is created successfully";
 } 
 else{
-    echo "Error creating TABLE" . $conn->error;
+    echo "Error creating TABLE". $conn->error;
 }
 $conn->close();
 ?>

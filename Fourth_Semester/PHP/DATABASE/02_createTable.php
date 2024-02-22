@@ -23,5 +23,5 @@ if ($conn->query($sql)===TRUE){
 else{
     echo "Error creating TABLE" . $conn->error;
 }
-$con->close();
+$conn->close();
 ?>

@@ -3,7 +3,7 @@
 
 ## Description
 
-This is a code repository for all the major lab codes necessary for BIM students according to semester in subject-wise format, currently in 4<sup>th</sup> semester and is being updated.
+This is a code repository for all the lab codes necessary for BIM students according to semester in subject-wise format, currently in 4<sup>th</sup> semester and is being updated.
 
 _Please feel free to update the codes as per needs and contribute to the repository._
 

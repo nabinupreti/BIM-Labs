@@ -32,7 +32,7 @@ int main()
         wt[i]= bt[i-1]+ wt[i-1];
     }
  
-    printf("Process ID     Burst Time     Waiting Time     TurnAround Time\n");
+    printf("Process ID     Burst Time     Waiting Time     TurnAround Time \n");
     float twt=0.0;
     float tat= 0.0;
     for(i=0; i<n; i++)
@@ -58,6 +58,6 @@ int main()
  
     //for calculating average turnaround time
     att = tat/n;
-    printf("Avg. waiting time= %f\n",awt);
-    printf("Avg. turnaround time= %f",att);
+    printf("Avg. waiting time= %.2f \n",awt);
+    printf("Avg. turnaround time= %.2f",att);
 }

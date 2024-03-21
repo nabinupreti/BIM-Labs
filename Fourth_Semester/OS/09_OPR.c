@@ -10,10 +10,10 @@ int search(int key, int frame_items[], int frame_occupied)
 }
 
 void printOuterStructure(int max_frames){
-    printf("Stream ");
+    printf("Stream \t\t");
     
     for(int i = 0; i < max_frames; i++)
-        printf("Frame%d ", i+1);
+        printf("Frame%d \t\t", i+1);
 }
 void printCurrFrames(int item, int frame_items[], int frame_occupied, int max_frames){
     
@@ -105,7 +105,7 @@ void optimalPage(int ref_str[], int refStrLen, int frame_items[], int max_frames
 int main()
 {
     // int ref_str[] = {9, 0, 5, 1, 0, 3, 0, 4, 1, 3, 0, 3, 1, 3};
-    int ref_str[] = {7, 0, 1, 2, 0, 3, 0, 4, 2, 3, 0, 3, 2, 1, 2, 0, 1, 7, 0, 1};
+    int ref_str[] = {7, 0, 1, 2, 0, 3, 0, 0, 1, 7, 0, 1};
     int refStrLen = sizeof(ref_str) / sizeof(ref_str[0]);
     int max_frames = 3;
     int frame_items[max_frames];

@@ -14,7 +14,7 @@ int checkHit(int incomingPage, int queue[], int occupied){
 void printFrame(int queue[], int occupied)
 {
     for(int i = 0; i < occupied; i++)
-        printf("%d\t\t\t",queue[i]);
+        printf("%d\t\t",queue[i]);
 }
 
 int main()
@@ -31,11 +31,11 @@ int main()
     int occupied = 0;
     int pagefault = 0;
     
-    printf("Page\t Frame1 \t Frame2 \t Frame3\n");
+    printf("Page \t\tFrame1 \t\tFrame2 \t\tFrame3\n");
     
     for(int i = 0;i < n; i++)
     {
-        printf("%d:  \t\t",incomingStream[i]);
+        printf("%d:\t\t",incomingStream[i]);
         // what if currently in frame 7
         // next item that appears also 7
         // didnt write condition for HIT

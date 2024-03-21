@@ -7,7 +7,7 @@ int main()
       float average_waiting_time, average_turnaround_time;
       printf("\nEnter the Total Number of Processes:\t");
       scanf("%d", &limit); 
-      printf("\nEnter Details of %d Processesn", limit);
+      printf("\nEnter Details of %d Processes:", limit);
       for(i = 0; i < limit; i++)
       {
             printf("\nEnter Arrival Time:\t");

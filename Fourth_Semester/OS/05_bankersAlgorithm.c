@@ -19,8 +19,8 @@ int main()
                      {2, 2, 2},  // P3  
                      {4, 3, 3}}; // P4  
   
-    int avail[3] = {3, 3, 2}; // Available Resources  
-  
+    int avail[3] = {5, 3, 2}; // Available Resources  
+
     int f[n], ans[n], ind = 0;  
     for (k = 0; k < n; k++)  
     {  

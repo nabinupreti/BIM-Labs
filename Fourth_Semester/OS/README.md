@@ -12,10 +12,10 @@
 - [10. Clock page replacement  ](/Fourth_Semester/OS/10_ClockPageReplacement.c)
 - [11. FCFS disk scheduling  ](/Fourth_Semester/OS/11_FCFSdiskScheduling.c)
 - [12. CSCAN disk scheduling  ](/Fourth_Semester/OS/12_CSCANdiskScheduling.c)
-- [13. CSCAN disk scheduling  ](/Fourth_Semester/OS/13_SCANdiskScheduling.c)
-- [14. CSCAN disk scheduling  ](/Fourth_Semester/OS/14_SSTFdiskscheduling.c)
-- [15. CSCAN disk scheduling  ](/Fourth_Semester/OS/15_LOOKdiskScheduling.c)
-- [16. CSCAN disk scheduling  ](/Fourth_Semester/OS/16_CLOOKdiskScheduling.c)
+- [13. SCAN disk scheduling  ](/Fourth_Semester/OS/13_SCANdiskScheduling.c)
+- [14. SSTF disk scheduling  ](/Fourth_Semester/OS/14_SSTFdiskscheduling.c)
+- [15. LOOK disk scheduling  ](/Fourth_Semester/OS/15_LOOKdiskScheduling.c)
+- [16. CLOOK disk scheduling  ](/Fourth_Semester/OS/16_CLOOKdiskScheduling.c)
 
 
 

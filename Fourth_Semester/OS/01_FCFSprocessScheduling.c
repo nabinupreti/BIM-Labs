@@ -59,5 +59,5 @@ int main()
     //for calculating average turnaround time
     att = tat/n;
     printf("Avg. waiting time= %.2f \n",awt);
-    printf("Avg. turnaround time= %.2f",att);
+    printf("Avg. turnaround time= %.2f\n",att);
 }

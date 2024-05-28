@@ -28,6 +28,10 @@ _Please feel free to update the codes as per needs and contribute to the reposit
 - [OS](/Fourth_Semester/OS/README.md)
 - [DBMS](/Fourth_Semester/DBMS/README.md)
 
+## [5<sup>th</sup> Semester](/Fifth_Semester/README.md)
+
+- [Information Security](/Fifth_Semester/IS/)
+
 ## Contributing
 
 1. Fork this repository

@@ -1,3 +1,3 @@
 # Programming with Python
 
-## 1. [Lab Assignment-1]()
+## - [Lab Assignment - 1](/Fifth_Semester/Python/LAB1/README.md)

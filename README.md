@@ -30,7 +30,10 @@ _Please feel free to update the codes as per needs and contribute to the reposit
 
 ## [5<sup>th</sup> Semester](/Fifth_Semester/README.md)
 
-- [Information Security](/Fifth_Semester/IS/)
+- [Information Security](/Fifth_Semester/IS/README.md)
+- [Python](/Fifth_Semester/Python/README.md)
+- [Artificial Intelligence](/Fifth_Semester/AI/README.md)
+
 
 ## Contributing
 

@@ -1,4 +1,4 @@
-tempc = float(input("Enter temperature in Celcius: "))
+tempc = float(input("Enter temperature in Celsius: "))
 
 tempf = tempc*(9/5)+32
 

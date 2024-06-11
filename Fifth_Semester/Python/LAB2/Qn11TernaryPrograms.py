@@ -18,3 +18,13 @@ num3 = int(input("Enter num3: "))
 y = num1 if (num1 > num2 and num1 > num3) else (num2 if num2 > num3  else num3)
 
 print("Greatest among",num1,",",num2,"and",num3,"is", y)
+
+#smallest among four
+num1 = int(input("Enter num1: "))
+num2 = int(input("Enter num2: "))
+num3 = int(input("Enter num3: "))
+num4 = int(input("Enter num4: "))
+
+y = num1 if (num1 < num2 and num1 < num3 and num1 < num4) else (num2 if (num2 < num3 and num2 < num4) else num3 if (num3 < num4) else num4)
+print(f"Smallest among {num1}, {num2}, {num3}, and {num4} is {y}")
+

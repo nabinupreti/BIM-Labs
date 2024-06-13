@@ -14,12 +14,12 @@
   12. [Check character is alphabet, digit or special chars](/Fifth_Semester/Python/LAB2/Qn12checkCharacter.py)
   13. [Use of loops](/Fifth_Semester/Python/LAB2/Qn13Loops.py)
   14. [Finding factorial of a number](/Fifth_Semester/Python/LAB2/Qn14Factorial.py)
-  15. [](/Fifth_Semester/Python)
-  16. [](/Fifth_Semester/Python)
-  17. [](/Fifth_Semester/Python)
-  18. [](/Fifth_Semester/Python)
-  19. [](/Fifth_Semester/Python)
-  20. [](/Fifth_Semester/Python/)
+  15. [Find sum of n numbers](/Fifth_Semester/Python/LAB2/Qn15sumOfn.py)
+  16. [Sum of odd and even numbers from 1 - 100](/Fifth_Semester/Python/LAB2/Qn16sumOfOddandEven.py)
+  17. [Find the sum and average of n number input by user](/Fifth_Semester/Python/LAB2/Qn17SumAndAvg.py)
+  18. [Find number from 1 - 100 divisible by 5](/Fifth_Semester/Python/LAB2/Qn18NumberDivisibleBy5.py)
+  19. [Input the number and find the sum of each digit](/Fifth_Semester/Python/LAB2/Qn19SumOfEachDigit.py)
+  20. [check Armstrong and Palindrome](/Fifth_Semester/Python/LAB2/Qn20ArmstrongAndPalindrome.py)
   21. [](/Fifth_Semester/Python)
   22. [](/Fifth_Semester/Python)
   23. [](/Fifth_Semester/Python)
@@ -35,6 +35,8 @@
   32. [](/Fifth_Semester/Python)
   33. [](/Fifth_Semester/Python)
   34. [](/Fifth_Semester/Python)
+  34. [Pattern Generation ](/Fifth_Semester/Python/LAB2/Qn35Pattern.py)
+  35. 
 
 
 

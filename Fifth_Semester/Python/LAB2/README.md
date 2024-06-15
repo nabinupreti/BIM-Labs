@@ -27,15 +27,15 @@
   25. [WAP to check whether a number is prime or not](/Fifth_Semester/Python/LAB2/Qn25CheckPrime.py)
   26. [check string is palindrome or not](/Fifth_Semester/Python/LAB2/Qn26PalindromeCheck.py)
   27. [to check two strings are anagrams or not](/Fifth_Semester/Python/LAB2/Qn27CheckAnagrams.py)
-  28. [](/Fifth_Semester/Python)
-  29. [](/Fifth_Semester/Python)
-  30. [](/Fifth_Semester/Python)
-  31. [](/Fifth_Semester/Python)
-  32. [](/Fifth_Semester/Python)
-  33. [](/Fifth_Semester/Python)
-  34. [](/Fifth_Semester/Python)
-  34. [Pattern Generation ](/Fifth_Semester/Python/LAB2/Qn35Pattern.py)
-  35. 
+  28. [print common elements in two lists](/Fifth_Semester/Python/LAB2/Qn28PrintCommon.py)
+  29. [Check duplicates or not in list](/Fifth_Semester/Python)
+  30. [Print list untill -ve number encountered](/Fifth_Semester/Python/LAB2/Qn30PrintUntillNegative.py)
+  31. [Print number from 1 to 10 skipping odd numbers](/Fifth_Semester/Python/LAB2/Qn31ContinueStatement.py)
+  32. [print numbers from 1-10 skipping 5 and 7](/Fifth_Semester/Python/LAB2/Qn32UseOfContinue.py)
+  33. [Python script with loop which iterates over list of number and does nothing for each iteration](/Fifth_Semester/Python/LAB2/Qn33PassStatement.py)
+  34. [Python script with loop which iterates over range of number and does nothing for each iteration](/Fifth_Semester/Python/LAB2/Qn34PassUses.py)
+  35. [Pattern Generation ](/Fifth_Semester/Python/LAB2/Qn35Pattern.py)
+  36. 
 
 
 

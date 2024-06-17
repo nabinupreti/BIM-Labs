@@ -7,3 +7,4 @@ if len(s) % 2 == 0:
 else:
     print("Middle character:", s[mid])
 
+print("hello")

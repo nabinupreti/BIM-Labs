@@ -28,7 +28,7 @@
   26. [check string is palindrome or not](/Fifth_Semester/Python/LAB2/Qn26PalindromeCheck.py)
   27. [to check two strings are anagrams or not](/Fifth_Semester/Python/LAB2/Qn27CheckAnagrams.py)
   28. [print common elements in two lists](/Fifth_Semester/Python/LAB2/Qn28PrintCommon.py)
-  29. [Check duplicates or not in list](/Fifth_Semester/Python)
+  29. [Check duplicates or not in list](/Fifth_Semester/Python/LAB2/QN29CheckDuplicates.py)
   30. [Print list untill -ve number encountered](/Fifth_Semester/Python/LAB2/Qn30PrintUntillNegative.py)
   31. [Print number from 1 to 10 skipping odd numbers](/Fifth_Semester/Python/LAB2/Qn31ContinueStatement.py)
   32. [print numbers from 1-10 skipping 5 and 7](/Fifth_Semester/Python/LAB2/Qn32UseOfContinue.py)

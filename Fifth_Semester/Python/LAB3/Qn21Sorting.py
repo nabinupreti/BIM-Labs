@@ -3,4 +3,4 @@ lst = [3, 1, 2, 4]
 
 print("Using sorted(): ",sorted(lst))
 lst.sort()
-print("Usinf sort(): ",lst)
+print("Using sort(): ",lst)

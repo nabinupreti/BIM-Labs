@@ -1,4 +1,4 @@
-# TDemonstrate set operations like union, intersection, difference, and symmetric difference
+# To Demonstrate set operations like union, intersection, difference, and symmetric difference
 s1 = {1, 2, 3}
 s2 = {3, 4, 5}
 

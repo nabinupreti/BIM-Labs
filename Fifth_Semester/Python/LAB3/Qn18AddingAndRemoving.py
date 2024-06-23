@@ -6,7 +6,7 @@ def add_remove_items(lst):
     lst.insert(1, 10)
     print("after inserting 10 to index 1:", lst)
     lst.remove(2)
-    print("After removing 2", lst)
+    print("After removing 2:", lst)
     lst.pop()
     print("after pop():", lst)
     del lst[0]

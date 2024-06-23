@@ -8,4 +8,4 @@ print("Is s1 a subset of s2?", is_subset)
 
 # Check if s2 is a superset of s1
 is_superset = s1.issuperset(s2)
-print("Is s2 a superset of s1?", is_superset)
+print("Is s1 a superset of s2?", is_superset)

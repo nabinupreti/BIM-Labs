@@ -1,4 +1,4 @@
-// C program to implement Playfair Cipher
+// 5.	Implement Playfair Cipher to encrypt and decrypt a message “THIS IS KATHMANDU” using key phrase “NEPAL”.
 
 #include <stdio.h>
 #include <stdlib.h>
@@ -161,11 +161,11 @@ int main()
 	char str[SIZE], key[SIZE];
 
 	// Key to be encrypted
-	strcpy(key, "Monarchy");
+	strcpy(key, "NEPAL");
 	printf("Key text: %s\n", key);
 
 	// Plaintext to be encrypted
-	strcpy(str, "instruments");
+	strcpy(str, "THIS IS KATHMANDU");
 	printf("Plain text: %s\n", str);
 
 	// encrypt using Playfair Cipher
@@ -176,4 +176,3 @@ int main()
 	return 0;
 }
 
-// This code is contributed by AbhayBhat

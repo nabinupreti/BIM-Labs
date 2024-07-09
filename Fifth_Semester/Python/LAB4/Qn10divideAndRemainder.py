@@ -2,6 +2,7 @@
 def divide_and_remainder(dividend, divisor):
     quotient = dividend // divisor
     remainder = dividend % divisor
+    return quotient, remainder
     
 
 # test the function

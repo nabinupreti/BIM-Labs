@@ -1,11 +1,14 @@
-#class named book with attributes title, author, and genre.Constructor to initialize these attributes and create an object 
+
 class Book:
-    title, author, genre = "","",""
     def __init__(self, title, author, genre):
         self.title = title
         self.author = author
         self.genre = genre
 
-obj = Book("It Starts with Us", "Collen Hoover", "Love")
+    def getdata(self):
+        return f"Title: {self.title}, Author: {self.author}, Genre: {self.genre}"
 
-print("Book is",obj.title)
+# Create an object of the Book class
+book = Book("1984", "George Orwell", "Dystopian")
+print(book.getdata())
+

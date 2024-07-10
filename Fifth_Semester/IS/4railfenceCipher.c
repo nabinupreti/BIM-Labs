@@ -1,3 +1,5 @@
+//4.	Implement Rail-Fence Cipher to encrypt and decrypt a message “YOUR OWN MESSAGE” with fence size k.
+
 #include<stdio.h>
 #include<string.h>
 
@@ -64,8 +66,8 @@ void decryptMsg(char enMsg[], int key){
 }
 
 int main(){
-    char msg[] = "Hello World";
-    char enMsg[] = "Horel ollWd";
+    char msg[] = "YOUR OWN MESSAGE";
+    char enMsg[] = "Y  SORONMSAEUWEG";
     int key = 3;
 
     printf("Original Message: %s", msg);

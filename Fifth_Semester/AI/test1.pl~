@@ -1,0 +1,12 @@
+% facts for fruit
+fruit(apple).
+fruit(banana).
+fruit(grapes).
+fruit(mango).
+
+% define facts for flower
+flower(rose).
+flower(pearl).
+flower(lotus).
+flower(tulip).
+

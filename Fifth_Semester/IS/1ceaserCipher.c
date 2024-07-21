@@ -79,3 +79,11 @@ void decrypt(char* ciphertext, int key, char* plaintext) {
     }
     plaintext[i] = '\0'; // Null-terminate the plaintext string
 }
+
+/*Caesar Cipher
+1. Encrypt a message
+2. Decrypt a message
+Enter your choice (1 or 2): 1
+Enter plaintext: nabin
+Enter key: 2
+Encrypted message: pcdkp*/

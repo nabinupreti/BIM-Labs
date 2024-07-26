@@ -12,8 +12,6 @@ class Days(Enum):
 
 # Function to determine if a given day is a weekday or weekend
 def determine_day_type(day):
-    for day in Days:
-        print(day)
     if day in (Days.SATURDAY, Days.SUNDAY):
         return "weekend"
     else:

@@ -1,7 +1,7 @@
 class Publication:
-    def __init__(self, title, price):
-        self.title = title
-        self.price = price
+    # def __init__(self, title, price):
+    #     self.title = title
+    #     self.price = price
 
     def getdata(self):
         self.title = input("Enter title: ")
@@ -11,9 +11,9 @@ class Publication:
         print(f"Title: {self.title}, Price: {self.price}")
 
 class Book(Publication):
-    def __init__(self, title="", price=0.0, pages=0):
-        super().__init__(title, price)
-        self.pages = pages
+    # def __init__(self, title="", price=0.0, pages=0):
+    #     super().__init__(title, price)
+    #     self.pages = pages
 
     def getdata(self):
         super().getdata()
@@ -24,9 +24,9 @@ class Book(Publication):
         print(f"Pages: {self.pages}")
 
 class CDROM(Publication):
-    def __init__(self, title="", price=0.0, playtime=0):
-        super().__init__(title, price)
-        self.playtime = playtime
+    # def __init__(self, title="", price=0.0, playtime=0):
+    #     super().__init__(title, price)
+    #     self.playtime = playtime
 
     def getdata(self):
         super().getdata()

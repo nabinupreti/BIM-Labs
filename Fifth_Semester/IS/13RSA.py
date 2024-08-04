@@ -112,8 +112,6 @@ if __name__ == '__main__':
     p = int(input(" - Enter a prime number (17, 19, 23, etc): "))
     q = int(input(" - Enter another prime number (Not one you entered above): "))
 
-    print(" - Generating your public / private key-pairs now . . .")
-
     public, private = generate_key_pair(p, q)
 
     print(" - Your public key is ", public, " and your private key is ", private)

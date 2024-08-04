@@ -1,1 +1,0 @@
-//3.	Write a program to encrypt and decrypt the message “NOCHEATING” with key “EXAM” using Vigenere cipher.

@@ -46,5 +46,4 @@ print(f"Encrypted Text: {encrypted_text}")
 decrypted_text = decrypt_vigenere(encrypted_text, key)
 print(f"Decrypted Text: {decrypted_text}")
 
-#previous code was only support the upper case letters
-#this code can be apply on both
+

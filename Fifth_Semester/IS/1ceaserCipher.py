@@ -1,5 +1,5 @@
 # Implement Ceaser Cipher
-def encrypt_text(plaintext,n):
+def encrypt(plaintext,n):
     ans = ""
     # iterate over the given text
     for i in range(len(plaintext)):
@@ -21,12 +21,12 @@ def encrypt_text(plaintext,n):
 def decrypt():
     
     #enter your encrypted message(string) below
-    encrypted_message = input("Enter the message i.e to be decrypted: ").strip()
+    encrypted_message = input("Enter ciphertext: ").strip().lower()
     
     letters="abcdefghijklmnopqrstuvwxyz"
     
     #enter the key value to decrypt
-    k = int(input("Enter the key to decrypt: "))
+    k = int(input("Enter key : "))
     decrypted_message = ""
 
     for ch in encrypted_message:
@@ -40,9 +40,7 @@ def decrypt():
             decrypted_message += ch
     print("Your decrypted message is:",decrypted_message)
 
-plaintext = "hello"
-n = 1
-print("Plain Text is : " + plaintext)
-print("Shift pattern is : " + str(n))
-print("Cipher Text is : " + encrypt_text(plaintext,n))
+plaintext = input("Enter message to encrypt: ")
+n = int(input("Enter Key: "))
+print("Cipher Text is : " + encrypt(plaintext,n))
 decrypt()

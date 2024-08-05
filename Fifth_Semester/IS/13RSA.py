@@ -104,23 +104,23 @@ def decrypt(pk, ciphertext):
     aux = [str(pow(char, key, n)) for char in ciphertext]
     # Return the array of bytes as a string
     plain = [chr(int(char2)) for char2 in aux]
+    
     return ''.join(plain)
 
 
 if __name__ == '__main__':
 
-    p = int(input(" - Enter a prime number (17, 19, 23, etc): "))
-    q = int(input(" - Enter another prime number (Not one you entered above): "))
+    p = int(input("Enter a prime number (17, 19, 23, etc): "))
+    q = int(input("Enter another prime number (Not one you entered above): "))
 
     public, private = generate_key_pair(p, q)
 
-    print(" - Your public key is ", public, " and your private key is ", private)
+    print("Your public key is ", public, " and your private key is ", private)
 
-    message = input(" - Enter a message to encrypt with your public key: ")
+    message = input("Enter a message to encrypt with your public key: ")
     encrypted_msg = encrypt(public, message)
-
-    print(" - Your encrypted message is: ", ''.join(map(lambda x: str(x), encrypted_msg)))
-    print(" - Decrypting message with private key ", private, " . . .")
-    print(" - Your message is: ", decrypt(private, encrypted_msg))
+    print("Your encrypted message is: ", ''.join(map(lambda x: str(x), encrypted_msg)))
+    print("Decrypting message with private key ", private, " . . .")
+    print("Your message is: ", decrypt(private, encrypted_msg))
 
   

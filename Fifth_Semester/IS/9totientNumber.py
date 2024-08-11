@@ -21,6 +21,3 @@ def phi(n):
 # Driver Code
 n = int(input("Enter a integer to find Totient number:"))
 print(f"Totient number of {n} = ", phi(n))
-           
-# This code is contributed
-# by Smitha

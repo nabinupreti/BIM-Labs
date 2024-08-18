@@ -66,4 +66,4 @@ if path == "failure":
 elif path == "cutoff":
     print("Search terminated due to depth limit.")
 else:
-    print("Path found:", path)
+    print("Path found:", path) 

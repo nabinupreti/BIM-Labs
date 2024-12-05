@@ -1,32 +1,44 @@
 import tkinter as tk
 
-def create_calculator_gui():
-    root = tk.Tk()
-    root.title("Calculator")
+def add():
+    num1 = float(entry1.get())
+    num2 = float(entry2.get())
+    result = num1 + num2
+    result_entry.delete(0,tk.END)
+    result_entry.insert(tk.END,str(result))
+def subtract():
+    num1 = float(entry1.get())
+    num2 = float(entry2.get())
+    result = num1 - num2
+    result_entry.delete(0, tk.END)
+    result_entry.insert(tk.END, str(result))
 
-    # Labels
-    label1 = tk.Label(root, text="First Number")
-    label2 = tk.Label(root, text="Second Number")
-    result_label = tk.Label(root, text="Result")
+root = tk.Tk()
+root.title("Calculator")
 
-    label1.grid(row=0)
-    label2.grid(row=1)
-    result_label.grid(row=2)
+# Labels
+label1 = tk.Label(root, text="First Number")
+label2 = tk.Label(root, text="Second Number")
+result_label = tk.Label(root, text="Result")
 
-    # Text Fields
-    entry1 = tk.Entry(root)
-    entry2 = tk.Entry(root)
-    result_entry = tk.Entry(root)
+label1.grid(row=0)
+label2.grid(row=1)
+result_label.grid(row=2)
 
-    entry1.grid(padx=10,row=0,column=1)
-    entry2.grid(padx=10,row=1,column=1)
-    result_entry.grid(padx=10,row=2,column=1)
+# Text Fields
+entry1 = tk.Entry(root)
+entry2 = tk.Entry(root)
+result_entry = tk.Entry(root)
 
-    plus = tk.Button(text="+")
-    minus = tk.Button(text="-")
+entry1.grid(padx=10,row=0,column=1)
+entry2.grid(padx=10,row=1,column=1)
+result_entry.grid(padx=10,row=2,column=1)
 
-    plus.grid(row=3,column=0)
-    minus.grid(row=3,column=1)
-    root.mainloop()
+plus = tk.Button(text="+",command=add)
+minus = tk.Button(text="-",command=subtract)
 
-create_calculator_gui()
+plus.grid(row=3,column=0)
+minus.grid(row=3,column=1)
+root.mainloop()
+
+
